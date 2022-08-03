@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styleregistration.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="box-cadastro">
+            
+            <h1>Cadastro</h1>
+            
+            <form method="post" action="">
+                
+                <div class="box-information">
+                    <input type="text" name="nome" id="login" placeholder="Minimo 3 caracteres" minlength="4" required>
+                    <label for="login" id="labelUser">Nome</label>
+                </div>
+                
+                <div class="box-information">
+                    <input type="email" name="email" id="email" placeholder="Email mais usado" required>
+                    <label for="email" id="labelEmail">Email</label>
+                </div>
+                
+                <div class="box-information">
+                    <input type="password" name="password" id="senha" placeholder="Minimo 6 digitos" minlength="6" required>
+                    <label for="senha" id="labelPassword">Senha</label>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                
+                <div class="enviar">
+                    <button type="submit" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
